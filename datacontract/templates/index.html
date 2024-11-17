@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="h-full bg-gray-100" lang="en">
 <head>
-  <title>Data Contract</title>
+  <title>Price Statistics Data Catalog</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {# <script src="https://cdn.tailwindcss.com"></script> #}
@@ -18,14 +18,12 @@
       <div class="flex h-16 justify-between">
         <div class="flex">
           <div class="flex flex-shrink-0 items-center mr-6">
-            <a class="text-xl text-gray-900 font-semibold" href="/">
-              Data Contracts
-            </a>
+            Welcome to the Data Catalog for Consumer Price Statistics! This is a proof of concept catalog to help researchers know what open datasets exist and how to access them.
           </div>
         </div>
-        <div class="hidden sm:ml-6 sm:flex sm:items-center">
+        <!-- <div class="hidden sm:ml-6 sm:flex sm:items-center">
           <a href="https://github.com/sergegoussev/data_contract_experiments" class="text-sky-500 hover:text-gray-700 text-sm font-semibold" target="_blank">Catalog home</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </nav>
@@ -36,8 +34,12 @@
       <div>
         <div class="lg:flex lg:items-center lg:justify-between px-0">
           <div class="min-w-0 flex-1">
-            <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
-              Data Catalog</h2>
+            <h2>
+              <a class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight" href="https://sergegoussev.github.io/data_contract_experiments/">
+                Data Catalog
+              </a>
+            </h2>
+            
           </div>
         </div>
 
@@ -124,7 +126,7 @@
             {% if contracts_size == 0 %}
             <p>The data contract catalog is empty.</p>
             <p>
-              Learn more on data contracts on <a href="http://datacontract.com" class="text-sky-500 hover:text-gray-700 text-sm font-semibold">http://datacontract.com</a>.
+              Learn more about this catalog and the initiative to expand reproducibility in price statistics at <a href="https://github.com/sergegoussev/data_contract_experiments" class="text-sky-500 hover:text-gray-700 text-sm font-semibold">https://github.com/sergegoussev/data_contract_experiments</a>.
             </p>
             {% endif %}
 
