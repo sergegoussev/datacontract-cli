@@ -82,7 +82,7 @@
           <section id="servers">
             <div class="px-4 sm:px-0">
               <h1 class="text-base font-semibold leading-6 text-gray-900" id="servers">Servers</h1>
-              <p class="text-sm text-gray-500">Servers of the data contract</p>
+              <p class="text-sm text-gray-500">Servers where the dataset is hosted</p>
             </div>
 
             <ul role="list" class="mt-2 divide-y divide-gray-100 overflow-hidden bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-lg">
@@ -149,7 +149,7 @@
           <section id="definitions">
             <div class="px-4 sm:px-0">
               <h1 class="text-base font-semibold leading-6 text-gray-900">Definitions</h1>
-              <p class="text-sm text-gray-500">Domain specific definitions in the data contract</p>
+              <p class="text-sm text-gray-500">Domain specific definitions in the dataset</p>
             </div>
 
             {% for definition_name, definition in datacontract.definitions.items() %}
@@ -162,7 +162,7 @@
           <section id="examples">
             <div class="px-4 sm:px-0">
               <h1 class="text-base font-semibold leading-6 text-gray-900">Examples</h1>
-              <p class="text-sm text-gray-500">Examples for models in the data contract</p>
+              <p class="text-sm text-gray-500">Examples for models in the dataset</p>
             </div>
             {% for example in datacontract.examples %}
               {{ render_partial('partials/example.html', example = example) }}
@@ -250,7 +250,7 @@
       </div>
       <div class="mt-8 md:order-1 md:mt-0">
         <p class="text-center leading-5 text-gray-400">
-          Supported with ❤️ by <a href="https://datacontract-manager.com" class="text-gray-400 hover:text-gray-500">Data Contract Manager</a>
+          Supported by <a href="https://un-task-team-for-scanner-data.github.io/reproducibility-project/docs/about.html" class="text-gray-400 hover:text-gray-500">the Price Statistics Reproducibility project</a>
         </p>
       </div>
     </div>
